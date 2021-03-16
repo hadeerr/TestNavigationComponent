@@ -2,4 +2,4 @@
 
 
 ## Getting Started
-## simple test for using navigation component
+## Simple test for using navigation component

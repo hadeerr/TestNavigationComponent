@@ -41,8 +41,14 @@ class TitleFragment : Fragment() {
 
 
         //third way using onclick listener of navigation component
-        goToSecondDestination.setOnClickListener (
+        /*goToSecondDestination.setOnClickListener (
          Navigation.createNavigateOnClickListener(R.id.action_titleFragment_to_gameFragment)
+        )*/
+
+
+        //this in use of safe args plugin
+        goToSecondDestination.setOnClickListener (
+            Navigation.createNavigateOnClickListener(TitleFragmentDirections.actionTitleFragmentToGameFragment("whats is your name "))
         )
         setHasOptionsMenu(true)
 

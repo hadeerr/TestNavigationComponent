@@ -6,11 +6,16 @@
     android:background="@color/teal_200"
     tools:context=".GameFragment">
 
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
     <EditText
         android:id="@+id/answer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="write your answer"
+        android:layout_margin="40dp"
         android:textColor="@color/white"/>
     <!-- TODO: Update blank fragment layout -->
     <TextView

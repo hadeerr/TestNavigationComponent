@@ -29,6 +29,9 @@
             android:id="@+id/action_gameFragment_pop_including_titleFragment"
             app:popUpTo="@id/titleFragment"
             app:popUpToInclusive="true" />
+        <argument
+            android:name="question"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/gamerOverFragment"

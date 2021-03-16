@@ -1,5 +1,6 @@
 package com.example.testnavigationcoponent
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -29,15 +30,27 @@ class GameFragment : Fragment() {
     }
 
 
+    @SuppressLint("UseRequireInsteadOfGet")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+
+        //get argument
+        var arg = GameFragmentArgs.fromBundle(arguments!!)
+        question.text = arg.question
 
         gameDone.setOnClickListener{
 
             if(answer.text.toString() == "A"){
-                it.findNavController().navigate(R.id.action_gameFragment_to_gameWonFragment)
-            }else {
-                it.findNavController().navigate(R.id.action_gameFragment_to_gamerOverFragment2)
+                // usual use
+//                it.findNavController().navigate(R.id.action_gameFragment_to_gameWonFragment)
+                // use safe args
+                it.findNavController().navigate(GameFragmentDirections.actionGameFragmentToGameWonFragment())
 
+            }else {
+                //usual use
+//                it.findNavController().navigate(R.id.action_gameFragment_to_gamerOverFragment2)
+                // use safe args
+                it.findNavController().navigate(GameFragmentDirections.actionGameFragmentToGamerOverFragment2())
             }
         }
 

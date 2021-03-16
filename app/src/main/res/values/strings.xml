@@ -2,6 +2,8 @@
     <string name="app_name">TestNavigationCoponent</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_game_won_fragment">Hello Game Won Congratulations fragment</string>
+    <string name="hello_blank_game_over_fragment">Hello Game Over Try Again fragment</string>
     <string name="hello_blank_game_fragment">Hello game fragment</string>
     <string name="hello_blank_title_fragment">Hello title fragment</string>
 </resources>

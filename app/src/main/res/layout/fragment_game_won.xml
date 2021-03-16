@@ -3,22 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_200"
-    tools:context=".GameFragment">
+    android:background="@color/design_default_color_primary"
+    tools:context=".GameWonFragment">
 
-    <EditText
-        android:id="@+id/answer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="write your answer"
-        android:textColor="@color/white"/>
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/gameDone"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_gravity="center|center_vertical|center_horizontal"
         android:gravity="center"
-        android:text="@string/hello_blank_fragment" />
+        android:textColor="@color/white"
+        android:text="@string/hello_blank_game_won_fragment" />
 
 </FrameLayout>
